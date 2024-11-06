@@ -17,9 +17,7 @@ type Props = {
 };
 
 const SelectTokenWithDialog = (props: Props) => {
-  // TODO: use onSelectToken to set the current token
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { currentToken, onSelectToken } = props;
+  const { currentToken } = props;
 
   return (
     <Dialog>
