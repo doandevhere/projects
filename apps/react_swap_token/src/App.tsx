@@ -7,7 +7,13 @@ function App() {
         Swap anytime, <br /> anywhere.
       </h3>
       <SwapTokenSection />
-      <p className="text-white/50 text-center text-xs md:text-sm my-4 md:my-8">The largest onchain marketplace. Buy and sell crypto. <br /> on Ethereum and 11+ other chains.</p>
+      <p className="text-white/50 text-center text-xs md:text-sm my-6">
+        The largest onchain marketplace. Buy and sell crypto. <br /> on Ethereum
+        and 11+ other chains.
+      </p>
+      <p className="text-white/50 text-center text-xs border-t border-white/10 pt-3">
+        WARNING: We use common character <b>","</b> to separate thousands.
+      </p>
     </div>
   );
 }

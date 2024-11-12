@@ -1,6 +1,8 @@
 import { ArrowDownUp } from "lucide-react";
 import { useState } from "react";
 import SelectTokenWithDialog from "./SelectTokenWithDialog";
+import Input from "./Input";
+
 const SwapTokenSection = () => {
   const [swapData, setSwapData] = useState({
     sellToken: {
@@ -18,7 +20,8 @@ const SwapTokenSection = () => {
       <div className="sell border-2 p-4 rounded-xl border-white/10 hover:border-white/30 transition-all duration-300">
         <p className="text-gray-400 text-md">Sell</p>
         <div className="flex items-center gap-2 py-4">
-          <input
+          <Input
+            type="number"
             className="bg-transparent border-none outline-none text-white placeholder:text-gray-400 text-3xl flex-1 min-w-0"
             placeholder="0.00"
           />
@@ -43,9 +46,10 @@ const SwapTokenSection = () => {
       <div className="buy border-2 p-4 rounded-xl border-white/10 hover:border-white/30 transition-all duration-300">
         <p className="text-gray-400 text-md">Buy</p>
         <div className="flex items-center gap-2 py-4">
-          <input
+          <Input
             className="bg-transparent border-none outline-none text-white placeholder:text-gray-400 text-3xl flex-1 min-w-0"
             placeholder="0.00"
+            type="number"
           />
           <SelectTokenWithDialog
             currentToken={swapData.buyToken}
