@@ -1,7 +1,13 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
+  darkMode: [
+    "variant",
+    [
+      "@media (prefers-color-scheme: dark) { &:not(.light *) }",
+      "&:is(.dark *)",
+    ],
+  ],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +19,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#FF407D"
-        }
+          DEFAULT: "#FF407D",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
