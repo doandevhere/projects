@@ -24,7 +24,7 @@ const Header = (props: Props) => {
             </Link>
 
             <div className="flex items-center gap-3">
-              <Button variant="ghost" className="rounded-full text-black">
+              <Button variant="ghost" className="rounded-full text-black dark:text-white">
                 Sign Up
               </Button>
               <Button className="rounded-full text-white">Sign In</Button>
