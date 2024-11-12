@@ -1,11 +1,11 @@
+import Container from "@/components/container";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import { cn } from "@/lib/utils";
+import { BellDot } from "lucide-react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/header";
-import { cn } from "@/lib/utils";
-import Container from "@/components/container";
-import { BellDot, Speaker } from "lucide-react";
-import Footer from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

@@ -1,11 +1,8 @@
-import React from "react";
-import Container from "./container";
+import { Rabbit } from "lucide-react";
 import Link from "next/link";
-import { Github, Rabbit } from "lucide-react";
+import Container from "./container";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="border-t dark:border-gray-800 bg-white/90 dark:bg-black/90">
       <Container>
@@ -17,7 +14,9 @@ const Footer = (props: Props) => {
             </Link>
             <ul className="mt-4 sm:mt-0 flex flex-wrap gap-4 justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <Link href="https://github.com/doandevhere/projects/frontend_rabbit_jobs">Github</Link>
+                <Link href="https://github.com/doandevhere/projects/frontend_rabbit_jobs">
+                  Github
+                </Link>
               </li>
               <li>
                 <Link href="/">Privacy</Link>
