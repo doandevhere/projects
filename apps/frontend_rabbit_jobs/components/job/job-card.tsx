@@ -29,6 +29,14 @@ const JobCard = (props: Props) => {
           className="aspect-[21/9] w-full rounded-t-xl"
           quality={100}
         />
+        {data.isHot && (
+          <div className="absolute bg-white top-4 left-4 text-xs font-semibold text-primary px-2 py-1 rounded-full z-10">
+            <div className="rounded-full bg-primary size-2 inline-block mr-2 relative">
+              <span className="animate-ping inline-flex rounded-full bg-primary opacity-75 size-2 absolute top-0 left-0"></span>
+            </div>
+            HOT JOB
+          </div>
+        )}
         <div className="absolute inset-0 rounded-t-lg bg-gradient-to-b from-transparent to-black/60" />
         <Image
           src={data.companyLogo}
@@ -41,7 +49,9 @@ const JobCard = (props: Props) => {
 
       <div className="mt-4 p-3">
         <h3 className="text-lg font-semibold mt-2 text-center">{data.title}</h3>
-        <p className="text-sm text-gray-500/70 font-bold text-center dark:text-primary">{data.company}</p>
+        <p className="text-sm text-gray-500/70 font-bold text-center dark:text-primary">
+          {data.company}
+        </p>
 
         <p className="text-sm text-black dark:text-gray-300 mt-2 line-clamp-5">
           {data.description}
