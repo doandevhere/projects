@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
 
 export default {
@@ -13,8 +14,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#FF407D"
-        }
+          DEFAULT: "#FF407D",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
