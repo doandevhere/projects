@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
             <ul className="mt-4 sm:mt-0 flex flex-wrap gap-4 justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <Link href="https://github.com/doandevhere/projects/frontend_rabbit_jobs">
+                <Link href="https://github.com/doandevhere/projects/tree/main/apps/frontend_rabbit_jobs">
                   Github
                 </Link>
               </li>
