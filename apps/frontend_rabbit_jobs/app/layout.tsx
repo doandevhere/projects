@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rabbit Jobs | Find your dream job",
     description: "Rabbit Jobs | Best platform for finding your dream job, just swipe right!",
-    images: ["/favicon/favicon.ico"],
+    images: ["/favicon/android-chrome-512x512.png"],
     url: "https://fviec.vn",
     type: "website",
     siteName: "Rabbit Jobs",
