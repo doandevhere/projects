@@ -20,17 +20,17 @@ const JobCard = (props: Props) => {
         className
       )}
     >
-      <div className="relative">
+      <div className="relative border-b border-gray-200 dark:border-gray-800">
         <Image
           src={data.companyBanner}
           alt={data.company}
-          width={210}
-          height={90}
+          width={1050}
+          height={450}
           className="aspect-[21/9] w-full rounded-t-xl"
           quality={100}
         />
         {data.isHot && (
-          <div className="absolute bg-white top-4 left-4 text-xs font-semibold text-primary px-2 py-1 rounded-full z-10">
+          <div className="absolute bg-white top-4 left-4 text-xs font-semibold text-primary px-2 py-1 rounded-full z-10 shadow-xl border border-gray-200 ">
             <div className="rounded-full bg-primary size-2 inline-block mr-2 relative">
               <span className="animate-ping inline-flex rounded-full bg-primary opacity-75 size-2 absolute top-0 left-0"></span>
             </div>
@@ -38,13 +38,16 @@ const JobCard = (props: Props) => {
           </div>
         )}
         <div className="absolute inset-0 rounded-t-lg bg-gradient-to-b from-transparent to-black/60" />
-        <Image
-          src={data.companyLogo}
-          alt={data.company}
-          width={48}
-          height={48}
-          className="size-12 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full shadow-xl"
-        />
+        <div className="size-12 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full shadow-xl border-2 border-white dark:border-gray-800 overflow-hidden">
+          <Image
+            src={data.companyLogo}
+            alt={data.company}
+            width={180}
+            height={180}
+            className="w-full h-full "
+            quality={100}
+          />
+        </div>
       </div>
 
       <div className="mt-4 p-3">
