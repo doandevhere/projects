@@ -40,5 +40,32 @@
       transition: background 0.3s ease, color 0.3s ease;
       scroll-behavior: smooth;
     }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      /* border-radius: 10px; */
+      @apply bg-gray-300;
+    }
+
+    &.dark::-webkit-scrollbar-track {
+      @apply bg-white;
+    }
+
+
+    ::-webkit-scrollbar-thumb{
+      /* border-radius: 10px; */
+      /* background: rgba(0,0,0,0.2); */
+      @apply bg-primary;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background: rgba(0,0,0,0.4);
+    }
+    ::-webkit-scrollbar-thumb:active{
+      background: rgba(0,0,0,.9);
+    }
   }
 }
