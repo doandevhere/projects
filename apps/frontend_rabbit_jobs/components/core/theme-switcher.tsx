@@ -19,6 +19,8 @@ const ThemeSwitcher = (props: Props) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     setIsDarkMode(mediaQuery.matches);
+    document.documentElement.classList.toggle("dark", mediaQuery.matches);
+
 
     const handleChange = (event: MediaQueryListEvent) => {
       setIsDarkMode(event.matches);
