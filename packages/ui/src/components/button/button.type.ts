@@ -10,8 +10,7 @@ export type ButtonColor =
 
 export type ButtonSize = "small" | "medium" | "large";
 
-export interface ButtonBaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export type ButtonBaseProps = {
   variant?: ButtonVariant;
   color?: ButtonColor;
   size?: ButtonSize;
