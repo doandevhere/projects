@@ -1,6 +1,10 @@
 {
-  "name": "@doandevhere/projects",
+  "name": "@monorepo/projects",
   "version": "1.0.0",
   "author": "doandevhere",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
